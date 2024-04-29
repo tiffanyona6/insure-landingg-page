@@ -1,29 +1,25 @@
 .header {
-    position: relative;
-    overflow: clip;
+  position: relative;
+  overflow-x: clip;
 
-    &__nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 24px 24px 31px 24px;
-        background-color: white;
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px 31px 24px;
+    background-color: white;
+  }
 
+  &__logo {
+    width: 112px;
+    height: 18px;
+  }
 
-    }
-
-    &__logo {
-
-        width: 112px;
-        height: 18px;
-    }
-
-    &__icon {
-        width: 32px;
-        position: absolute;
-        z-index: 10;
-        left: 321px;
-
-    }
+  &__icon {
+    width: 32px;
+    position: absolute;
+    z-index: 10;
+    left: 321px;
+  }
 }

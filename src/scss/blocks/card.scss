@@ -1,14 +1,25 @@
 .card {
+  text-align: center;
 
-    text-align: center;
+  &__background {
+    position: relative;
+    background-color: var(--blue);
+    padding: 93px 24px 93px 24px;
+    color: white;
+    background-image: url(../../assets/images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
 
-    &__background {
-        background-color: var(--blue);
-        padding: 93px 24px 93px 24px;
-        color: white;
-        background-image: url(../../assets/images/bg-pattern-intro-left-mobile.svg), url(../../assets/images/bg-pattern-intro-right-mobile.svg);
-        background-repeat: no-repeat;
+    &::after {
+      background-image: url(../../assets/images/bg-pattern-intro-right-mobile.svg);
+      position: absolute;
+      content: "";
 
+      top: 300px;
+      left: 250px;
+      width: 377px;
+      height: 352px;
+      background-repeat: no-repeat;
+      z-index: 1;
     }
-
+  }
 }

@@ -1,12 +1,12 @@
 .menu {
   position: absolute;
   display: flex;
-  top: 0;
+  top: 70px;
   left: 0;
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
   flex-direction: column;
-  width: 256px;
-  height: 100vh;
+  width: 100vh;
+  height: calc(100vh - 70px);
   justify-content: center;
   padding: 0 24px;
   translate: 100%;
