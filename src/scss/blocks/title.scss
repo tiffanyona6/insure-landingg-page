@@ -1,0 +1,42 @@
+.title {
+    margin-top: 0;
+    font-family: "DM Serif Display", serif;
+    text-align: center;
+
+
+    &--xl {
+
+        font-size: var(--title-xl);
+        line-height: 48px;
+        letter-spacing: -0.67px;
+        margin-bottom: 32px;
+
+    }
+
+    &--description {
+        font-size: var(--title-xl);
+        line-height: 48px;
+        letter-spacing: -0.67px;
+        margin-bottom: 80px;
+    }
+
+    &--m {
+
+        font-size: var(--title-m);
+        line-height: auto;
+        letter-spacing: -0.39px;
+        margin-bottom: 16px;
+
+    }
+
+    &--l {
+
+        font-size: var(--title-l);
+        line-height: 40px;
+        letter-spacing: -0.56px;
+        margin-bottom: 40px;
+        font-family: "DM Serif Display", serif;
+
+    }
+
+}

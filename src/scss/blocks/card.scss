@@ -1,0 +1,14 @@
+.card {
+
+    text-align: center;
+
+    &__background {
+        background-color: var(--blue);
+        padding: 93px 24px 93px 24px;
+        color: white;
+        background-image: url(../../assets/images/bg-pattern-intro-left-mobile.svg), url(../../assets/images/bg-pattern-intro-right-mobile.svg);
+        background-repeat: no-repeat;
+
+    }
+
+}
