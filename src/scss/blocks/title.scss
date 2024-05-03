@@ -1,42 +1,49 @@
+@use "../mixins/responsive.scss" as *;
 .title {
-    margin-top: 0;
+  margin-top: 0;
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+
+  &--xl {
+    font-size: var(--title-xl);
+    line-height: 48px;
+    letter-spacing: -0.67px;
+    margin-bottom: 32px;
+    @include responsive(laptop) {
+      text-align: left;
+    }
+  }
+
+  &--description {
+    font-size: var(--title-xl);
+    line-height: 48px;
+    letter-spacing: -0.67px;
+    margin-bottom: 80px;
+    @include responsive(laptop) {
+      text-align: left;
+      margin-bottom: 96px;
+      font-size: 72px;
+      line-height: 64px;
+    }
+  }
+
+  &--m {
+    font-size: var(--title-m);
+    line-height: auto;
+    letter-spacing: -0.39px;
+    margin-bottom: 16px;
+  }
+
+  &--l {
+    font-size: var(--title-l);
+    line-height: 40px;
+    letter-spacing: -0.56px;
+    margin-bottom: 40px;
     font-family: "DM Serif Display", serif;
-    text-align: center;
-
-
-    &--xl {
-
-        font-size: var(--title-xl);
-        line-height: 48px;
-        letter-spacing: -0.67px;
-        margin-bottom: 32px;
-
+    @include responsive(laptop) {
+      font-size: 56px;
+      line-height: 56px;
+      padding: 69px 0 69px 81px;
     }
-
-    &--description {
-        font-size: var(--title-xl);
-        line-height: 48px;
-        letter-spacing: -0.67px;
-        margin-bottom: 80px;
-    }
-
-    &--m {
-
-        font-size: var(--title-m);
-        line-height: auto;
-        letter-spacing: -0.39px;
-        margin-bottom: 16px;
-
-    }
-
-    &--l {
-
-        font-size: var(--title-l);
-        line-height: 40px;
-        letter-spacing: -0.56px;
-        margin-bottom: 40px;
-        font-family: "DM Serif Display", serif;
-
-    }
-
+  }
 }

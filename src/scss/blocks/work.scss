@@ -1,7 +1,12 @@
+@use "../mixins/responsive.scss" as *;
 .work {
   position: relative;
   background-color: var(--blue);
   padding: 72px 24px;
   text-align: center;
   color: white;
+
+  @include responsive(laptop) {
+    margin-bottom: 150px;
+  }
 }

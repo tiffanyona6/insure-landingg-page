@@ -1,29 +1,29 @@
+@use "../mixins/responsive.scss" as *;
 .text {
+  line-height: 26px;
+  margin-top: 0;
+  color: var(--grey);
+  margin: 0;
 
-    line-height: 26px;
-    margin-top: 0;
+  &__card {
+    color: white;
+    font-size: var(--text-body);
+    margin-bottom: 32px;
+  }
+
+  &--grey {
     color: var(--grey);
-    margin: 0;
+    font-size: var(--text-button);
+    margin-bottom: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
 
-    &__card {
-        color: white;
-        font-size: var(--text-body);
-        margin-bottom: 32px;
-    }
-
-    &--grey {
-        color: var(--grey);
-        font-size: var(--text-button);
-        margin-bottom: 36px;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-    }
-
-    &--bold {
-        color: black;
-        font-size: var(--text-button);
-        margin-bottom: 16px;
-        font-weight: 700;
-        letter-spacing: 1.5px;
-    }
+  &--bold {
+    color: black;
+    font-size: var(--text-button);
+    margin-bottom: 16px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
 }

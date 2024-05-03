@@ -1,8 +1,12 @@
+@use "../mixins/responsive.scss" as *;
 .footer {
   padding: 88px 24px 0 24px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  @include responsive(laptop) {
+    padding: 0 165px 0 165px;
+  }
 
   &__logo {
     width: 112px;
@@ -15,14 +19,22 @@
     flex-direction: column;
     align-items: center;
     border-bottom: 1px, solid;
+    @include responsive(laptop) {
+      display: flex;
+      flex-direction: row;
+      gap: 500px;
+    }
   }
 
   &__social {
     display: flex;
     align-items: center;
-
     margin-bottom: 81px;
     gap: 16px;
+    @include responsive(laptop) {
+      display: flex;
+      margin: 0;
+    }
   }
 
   &__contact {
@@ -31,5 +43,10 @@
     text-align: center;
     margin-top: 40px;
     margin-bottom: 88px;
+    @include responsive(laptop) {
+      display: flex;
+      flex-direction: row;
+      gap: 174px;
+    }
   }
 }

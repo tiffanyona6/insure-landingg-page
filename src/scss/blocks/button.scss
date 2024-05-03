@@ -1,6 +1,33 @@
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/hover.scss" as *;
 .button {
   background-color: transparent;
   border: 1px solid;
   margin-bottom: 93px;
   padding: 13px 25px 13px 25px;
+
+  @include hover {
+    background-color: white;
+    color: var(--blue);
+  }
+
+  &--border {
+    @include responsive(laptop) {
+      background-color: transparent;
+      border: 1px solid black;
+      margin-bottom: 93px;
+      padding: 13px 25px 13px 25px;
+      color: black;
+    }
+    @include hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  &--line {
+    @include hover {
+      color: black;
+    }
+  }
 }

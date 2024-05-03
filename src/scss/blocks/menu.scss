@@ -1,3 +1,4 @@
+@use "../mixins/responsive.scss" as *;
 .menu {
   position: absolute;
   display: flex;
@@ -15,6 +16,16 @@
   font-size: 18px;
   color: white;
   z-index: 1;
+
+  @include responsive(laptop) {
+    translate: 0;
+    flex-direction: row;
+    background-color: transparent;
+    height: 26px;
+    top: 35px;
+    right: 5px;
+    color: var(--grey);
+  }
 
   &--show {
     translate: 0;

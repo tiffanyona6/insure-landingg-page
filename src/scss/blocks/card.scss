@@ -1,25 +1,45 @@
+@use "../mixins/responsive.scss" as *;
 .card {
   text-align: center;
+  @include responsive(laptop) {
+    margin-bottom: 305px;
+  }
 
   &__background {
     position: relative;
+    content: "";
     background-color: var(--blue);
     padding: 93px 24px 93px 24px;
     color: white;
     background-image: url(../../assets/images/bg-pattern-intro-left-mobile.svg);
     background-repeat: no-repeat;
+    @include responsive(laptop) {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding: 169px 735px 127px 165px;
+      text-align: left;
+    }
 
     &::after {
       background-image: url(../../assets/images/bg-pattern-intro-right-mobile.svg);
       position: absolute;
       content: "";
-
       top: 300px;
       left: 250px;
       width: 377px;
       height: 352px;
       background-repeat: no-repeat;
       z-index: 1;
+      @include responsive(laptop) {
+        display: none;
+      }
+    }
+  }
+
+  &__image {
+    @include responsive(laptop) {
+      display: none;
     }
   }
 }

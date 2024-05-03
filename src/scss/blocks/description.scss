@@ -1,5 +1,10 @@
+@use "../mixins/responsive.scss" as *;
 .description {
   padding-top: 140px;
+  @include responsive(laptop) {
+    padding: 0 165px 0 165px;
+    margin-bottom: 158px;
+  }
 
   &__info {
     display: flex;
@@ -7,10 +12,25 @@
     align-items: center;
     text-align: center;
     margin-bottom: 56px;
+    @include responsive(laptop) {
+      display: flex;
+      align-items: start;
+      text-align: left;
+    }
   }
 
   &__image {
     margin-bottom: 32px;
     width: 86px;
+    @include responsive(laptop) {
+      align-items: left;
+    }
+  }
+
+  &__container {
+    @include responsive(laptop) {
+      display: flex;
+      gap: 30px;
+    }
   }
 }
